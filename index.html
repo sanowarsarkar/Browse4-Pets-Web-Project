@@ -19,7 +19,7 @@
         }
     </style>
 </head>
-<body class="">
+<body>
     <main>
         <!-- Header Content -->
         <header class="bg-[#FFF9F4] border-b md:border-0 md:border-transparent border-black">
@@ -61,6 +61,7 @@
                             </svg>
                         </span>
                     </div>
+                    <!---button -->
                     <button class="px-5 py-2 border-2 border-yellow-400 rounded-lg hover:bg-yellow-400 transition-all duration-500 ease-in-out">Login</button>
                     <button class="bg-yellow-400 px-5 py-2 rounded-lg border-2 border-yellow-400 hover:bg-transparent hover:text-black hover:border-yellow-500 transition-all duration-500 ease-in-out">Register</button>
                 </div>
@@ -73,10 +74,10 @@
             <div class="absolute top-1/4 left-0 transform -translate-y-1/2 text-left pl-4">
                 <h1 class="font adlam text-4xl text-black leading-snug md:text-6xl">Pamper Your Pet,<br>Because They Deserve<br>the Best</h1>
                 <p class="my-4 text-[11px] font-sora text-gray-700 md:text-[20px]">Discover a world of treats, toys, and essentials handpicked for<br>your furry friends. Shop now and make tails wag with joy!</p>
+                <!-- animation svg-->
                 <svg class="size-9 text-blue-500 animate-bounce ml-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor">
                     <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
                   </svg>
-                  
                 <button class="bg-yellow-400 px-5 py-2 font sora rounded-lg border-2 border-yellow-400 hover:bg-transparent hover:text-black hover:border-yellow-500 transition-all duration-500 ease-in-out">Find a pet</button>
             </div>
     
@@ -84,16 +85,19 @@
             <img class="w-full h-full object-cover mt-20 sm:mt-48 md:mt-12" src="assets/cat-big.png" alt="image">
         </div>
     </section>
+
+    <!-- Browse By Categories -->
+    
     <section class="md:max-w-6xl mx-auto">
         <h1 class="text-3xl mr-2 p-5 md:text-3x1 my-5 font adlam">Browse By Categories</h1>
-        <div class="md:flex grid grid-cols-2 gap-1 p-6 justify-between justify-center">
+        <div class="md:flex grid grid-cols-2 gap-1 p-6 justify-between">
             <!-- Box 1 -->
             <div class="flex flex-col items-center bg-[#F9DF8A] p-6 rounded-lg hover:shadow-xl transition-shadow duration-300">
                 <div class="bg-[#fffcf4] p-6 rounded-full flex justify-center items-center w-24 h-24">
                     <img class="w-16 md:w-20 h-auto" src="assets/dog-cartoon.png" alt="Dog">
                 </div>
                 <h4 class="text-lg font-semibold mt-4">Dog</h4>
-                <p class="text-sm text-gray-600">3 items</p>
+                <p class="text-sm sora">1 items</p>
             </div>
         
             <!-- Box 2 -->
@@ -102,7 +106,7 @@
                     <img class="w-16 md:w-20 h-auto" src="assets/fish-cartoon.png" alt="Fish">
                 </div>
                 <h4 class="text-lg font-semibold mt-4">Fish</h4>
-                <p class="text-sm text-gray-600">3 items</p>
+                <p class="text-sm sors">2 items</p>
             </div>
         
             <!-- Box 3 -->
@@ -111,7 +115,7 @@
                     <img class="w-16 md:w-20 h-auto" src="assets/cat-cartoon.png" alt="Cat">
                 </div>
                 <h4 class="text-lg font-semibold mt-4">Cat</h4>
-                <p class="text-sm text-gray-600">3 items</p>
+                <p class="text-sm sora">3 items</p>
             </div>
         
             <!-- Box 4 -->
@@ -120,7 +124,7 @@
                     <img class="w-16 md:w-20 h-auto" src="assets/bird-cartoon.png" alt="Bird">
                 </div>
                 <h4 class="text-lg font-semibold mt-4">Bird</h4>
-                <p class="text-sm text-gray-600">3 items</p>
+                <p class="text-sm sora">4 items</p>
             </div>
         
             <!-- Box 5 -->
@@ -129,7 +133,7 @@
                     <img class="w-16 md:w-20 h-auto" src="assets/mouse-cartoon.png" alt="Mouse">
                 </div>
                 <h4 class="text-lg font-semibold mt-4">Mouse</h4>
-                <p class="text-sm text-gray-600">3 items</p>
+                <p class="text-sm sora">5 items</p>
             </div>
         
             <!-- Box 6 -->
@@ -138,172 +142,173 @@
                     <img class="w-16 md:w-20 h-auto" src="assets/rabbit-cartoon.png" alt="Rabbit">
                 </div>
                 <h4 class="text-lg font-semibold mt-4">Rabbit</h4>
-                <p class="text-sm text-gray-600">3 items</p>
+                <p class="text-sm sora">6 items</p>
             </div>
         </div>
     </section>
-    <section class="bg-[#FFF9F4]">
-        <div class="md:max-w-6xl mx-auto">
-            <h1 class="text-3xl mr-2 p-5 md:text-3x1 my-5 font adlam">Trending Pet Products</h1>
-            <div class="md:flex ml-8 grid grid-cols-1 gop-1 justify-between">
-                <div class="md:flex w-96 h-96 bg-[#F9DF8A] p-6 rounded-lg relative">
-                    <!-- Text content -->
-                    <div class="flex-1">
-                        <h3 class="text-3xl font-semibold">T-Shirt For Dogs</h3>
-                        <p class="my-6">Discover a world of treats, toys, and essentials handpicked for</p>
+    <!-- Trending Pet Products -->
+    <section class="bg-[#FFF9F4] overflow-x-hidden py-0">
+        <div class="md:max-w-6xl mx-auto px-4">
+            <h1 class="text-3xl p-5 md:text-3xl my-5 font-semibold adlam">Trending Pet Products</h1>
+    
+            <!-- Flex Containt for Desktop, Single Column for Mobile -->
+            <div class="grid grid-cols-1 items-center md:flex gap-4">
+                
+                <!-- First Box content -->
+                <div class="md:w-3/5 h-96 bg-[#F9DF8A] p-6 rounded-lg relative overflow-hidden">
+                    <div>
+                        <h3 class="text-3xl font-semibold adlam">T-Shirt For Dogs</h3>
+                        <p class="my-6 sora">Discover a world of treats, toys, and essentials handpicked for your pet.</p>
                         <button class="bg-[#FFF9F4] px-5 py-2 rounded-lg border-2 border-yellow-400 
                         hover:bg-transparent hover:text-black hover:border-yellow-500 
-                        transition-all duration-500 ease-in-out">Shop Now</button>
-                     <!-- Image content -->
-                    <div class="absolute top-24 bottom-0 right-0 p-6">
-                    <img class="w-42 h-64" src="assets/cute-pet-mid.png" alt="Dog">
+                        transition-all duration-500 ease-in-out sora">Shop Now</button>
+                    </div>
+                    <!-- Image content -->
+                    <div class="absolute top-24 right-0 p-4">
+                        <img class="w-40 h-64 max-w-full" src="assets/cute-pet-mid.png" alt="Dog">
                     </div>
                 </div>
-                    </div>
-
-                <!--grid-->
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-2 p-6"> 
+    
+                <!-- Second Box content -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-2 p-2 w-full">
                     <!-- Item 1 -->
                     <div class="flex bg-white p-4 rounded-lg text-center shadow-md items-center">
-                        <div class="mr-3">
-                            <img class="w-20 h-20 mx-auto bg-[#FFF9F4] p-4 rounded-lg" src="assets/dog-cartoon.png" alt="image">
+                        <div class="mr-2">
+                            <img class="w-20 h-20 bg-[#FFF9F4] p-4 rounded-lg" src="assets/dog-cartoon.png" alt="image">
                         </div>
-                        <div class="items-center mr-4 md:mr-4">
+                        <div>
                             <div class="flex items-center justify-center gap-1 mt-2">
                                 <img class="w-5 h-5" src="assets/Vector.png" alt="rating">
-                                <h5 class="font-semibold">4.5</h5>
+                                <h5 class="sora">4.5</h5>
                             </div>
-                            <h4 class="font-bold">Pet Bed</h4>
-                            <p class="text-black">$39.99</p>
+                            <h4 class="font-semibold sora">Pet Bed</h4>
+                            <p class="sora">$39.99</p>
                         </div>
                     </div>
-                
+                    
                     <!-- Item 2 -->
                     <div class="flex bg-white p-4 rounded-lg text-center shadow-md items-center">
-                        <div class="mr-3">
-                            <img class="w-20 h-20 mx-auto bg-[#FFF9F4] p-4 rounded-lg" src="assets/fish-cartoon.png" alt="image">
+                        <div class="mr-2">
+                            <img class="w-20 h-20 bg-[#FFF9F4] p-4 rounded-lg" src="assets/fish-cartoon.png" alt="image">
                         </div>
-                        <div class="items-center mr-4 md:mr-4">
+                        <div class="sora">
                             <div class="flex items-center justify-center gap-1 mt-2">
                                 <img class="w-5 h-5" src="assets/Vector.png" alt="rating">
-                                <h5 class="font-semibold">4.5</h5>
+                                <h5>4.5</h5>
                             </div>
-                            <h4 class="font-bold">Pet Bed</h4>
-                            <p class="text-black">$39.99</p>
+                            <h4 class="font-semibold">Pet Toy</h4>
+                            <p>$29.99</p>
                         </div>
                     </div>
-                
+    
                     <!-- Item 3 -->
                     <div class="flex bg-white p-4 rounded-lg text-center shadow-md items-center">
-                        <div class="mr-3">
-                            <img class="w-20 h-20 mx-auto bg-[#FFF9F4] p-4 rounded-lg" src="assets/bird-cartoon.png" alt="image">
+                        <div class="mr-2">
+                            <img class="w-20 h-20 bg-[#FFF9F4] p-4 rounded-lg" src="assets/bird-cartoon.png" alt="image">
                         </div>
-                        <div class="items-center mr-4 md:mr-4">
+                        <div class="sora">
                             <div class="flex items-center justify-center gap-1 mt-2">
                                 <img class="w-5 h-5" src="assets/Vector.png" alt="rating">
-                                <h5 class="font-semibold">4.5</h5>
+                                <h5>4.5</h5>
                             </div>
-                            <h4 class="font-bold">Pet Bed</h4>
-                            <p class="text-black">$39.99</p>
+                            <h4 class="font-semibold">Bird House</h4>
+                            <p>$19.99</p>
                         </div>
                     </div>
-                
+    
                     <!-- Item 4 -->
                     <div class="flex bg-white p-4 rounded-lg text-center shadow-md items-center">
-                        <div class="mr-3">
-                            <img class="w-20 h-20 mx-auto bg-[#FFF9F4] p-4 rounded-lg" src="assets/rabbit-cartoon.png" alt="image">
+                        <div class="mr-2">
+                            <img class="w-20 h-20 bg-[#FFF9F4] p-4 rounded-lg" src="assets/rabbit-cartoon.png" alt="image">
                         </div>
-                        <div class="items-center mr-4 md:mr-4">
+                        <div class="sora">
                             <div class="flex items-center justify-center gap-1 mt-2">
                                 <img class="w-5 h-5" src="assets/Vector.png" alt="rating">
-                                <h5 class="font-semibold">4.5</h5>
+                                <h5>4.5</h5>
                             </div>
-                            <h4 class="font-bold">Pet Bed</h4>
-                            <p class="text-black">$39.99</p>
+                            <h4 class="font-semibold">Rabbit Food</h4>
+                            <p>$15.99</p>
                         </div>
                     </div>
-                
                     <!-- Item 5 -->
                     <div class="flex bg-white p-4 rounded-lg text-center shadow-md items-center">
-                        <div class="mr-3">
-                            <img class="w-20 h-20 mx-auto bg-[#FFF9F4] p-4 rounded-lg" src="assets/bird-cartoon.png" alt="image">
+                        <div class="mr-2">
+                            <img class="w-20 h-20 bg-[#FFF9F4] p-4 rounded-lg" src="assets/bird-cartoon.png" alt="image">
                         </div>
-                        <div class="items-center mr-4 md:mr-4">
+                        <div class="sora">
                             <div class="flex items-center justify-center gap-1 mt-2">
                                 <img class="w-5 h-5" src="assets/Vector.png" alt="rating">
-                                <h5 class="font-semibold">4.5</h5>
+                                <h5>4.5</h5>
                             </div>
-                            <h4 class="font-bold">Pet Bed</h4>
-                            <p class="text-black">$39.99</p>
+                            <h4 class="font-semibold">Pet Couch</h4>
+                            <p>$49.99</p>
                         </div>
                     </div>
-                
                     <!-- Item 6 -->
                     <div class="flex bg-white p-4 rounded-lg text-center shadow-md items-center">
-                        <div class="mr-3">
-                            <img class="w-20 h-20 mx-auto bg-[#FFF9F4] p-4 rounded-lg" src="assets/pet-couch.png" alt="image">
+                        <div class="mr-2">
+                            <img class="w-20 h-20 bg-[#FFF9F4] p-4 rounded-lg" src="assets/pet-couch.png" alt="image">
                         </div>
-                        <div class="items-center mr-4 md:mr-4">
+                        <div class="sora">
                             <div class="flex items-center justify-center gap-1 mt-2">
                                 <img class="w-5 h-5" src="assets/Vector.png" alt="rating">
-                                <h5 class="font-semibold">4.5</h5>
+                                <h5>4.5</h5>
                             </div>
-                            <h4 class="font-bold">Pet Bed</h4>
-                            <p class="text-black">$39.99</p>
+                            <h4 class="font-semibold">Pet Couch</h4>
+                            <p>$49.99</p>
                         </div>
                     </div>
-                
                     <!-- Item 7 -->
                     <div class="flex bg-white p-4 rounded-lg text-center shadow-md items-center">
-                        <div class="mr-3">
-                            <img class="w-20 h-20 mx-auto bg-[#FFF9F4] p-4 rounded-lg" src="assets/fish-cartoon.png" alt="image">
+                        <div class="mr-2">
+                            <img class="w-20 h-20 bg-[#FFF9F4] p-4 rounded-lg" src="assets/fish-cartoon.png" alt="image">
                         </div>
-                        <div class="items-center mr-4 md:mr-4">
+                        <div class="sora">
                             <div class="flex items-center justify-center gap-1 mt-2">
                                 <img class="w-5 h-5" src="assets/Vector.png" alt="rating">
-                                <h5 class="font-semibold">4.5</h5>
+                                <h5>4.5</h5>
                             </div>
-                            <h4 class="font-bold">Pet Bed</h4>
-                            <p class="text-black">$39.99</p>
+                            <h4 class="font-semibold">Pet Couch</h4>
+                            <p>$49.99</p>
                         </div>
                     </div>
-                
                     <!-- Item 8 -->
                     <div class="flex bg-white p-4 rounded-lg text-center shadow-md items-center">
-                        <div class="mr-3">
-                            <img class="w-20 h-20 mx-auto bg-[#FFF9F4] p-4 rounded-lg" src="assets/pet-couch.png" alt="image">
+                        <div class="mr-2">
+                            <img class="w-20 h-20 bg-[#FFF9F4] p-4 rounded-lg" src="assets/pet-couch.png" alt="image">
                         </div>
-                        <div class="items-center mr-4 md:mr-4">
+                        <div class="sora">
                             <div class="flex items-center justify-center gap-1 mt-2">
                                 <img class="w-5 h-5" src="assets/Vector.png" alt="rating">
-                                <h5 class="font-semibold">4.5</h5>
+                                <h5>4.5</h5>
                             </div>
-                            <h4 class="font-bold">Pet Bed</h4>
-                            <p class="text-black">$39.99</p>
+                            <h4 class="font-semibold">Pet Couch</h4>
+                            <p>$49.99</p>
                         </div>
                     </div>
-                
+    
                     <!-- Item 9 -->
                     <div class="flex bg-white p-4 rounded-lg text-center shadow-md items-center">
-                        <div class="mr-3">
-                            <img class="w-20 h-20 mx-auto bg-[#FFF9F4] p-4 rounded-lg" src="assets/rabbit-cartoon.png" alt="image">
+                        <div class="mr-2">
+                            <img class="w-20 h-20 bg-[#FFF9F4] p-4 rounded-lg" src="assets/rabbit-cartoon.png" alt="image">
                         </div>
-                        <div class="items-center mr-4 md:mr-4">
+                        <div class="sora">
                             <div class="flex items-center justify-center gap-1 mt-2">
                                 <img class="w-5 h-5" src="assets/Vector.png" alt="rating">
-                                <h5 class="font-semibold">4.5</h5>
+                                <h5>4.5</h5>
                             </div>
-                            <h4 class="font-bold">Pet Bed</h4>
-                            <p class="text-black">$39.99</p>
+                            <h4 class="font-semibold">Fish Tank</h4>
+                            <p>$59.99</p>
                         </div>
                     </div>
-                </div>
-                
-                
-                <!-- gid -->
+                </div> 
             </div>
         </div>
-</section>
+    </section>
+
+
     </main>
+    
+    
 </body>
 </html>
